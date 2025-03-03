@@ -1,4 +1,4 @@
-import { Gift, Zap } from "lucide-react";
+import { Gift, PlayCircle, Zap } from "lucide-react";
 import HeroSideContainer from "../custom/HeroSideContainer";
 import { Button } from "../ui/button";
 
@@ -9,7 +9,8 @@ interface HeroSideLeftProps {
 export default function HeroSideLeft({ handleClick }: HeroSideLeftProps) {
     return (
         <HeroSideContainer>
-            <div className="flex flex-col gap-y-5">
+            <div className="flex flex-col items-center md:items-start gap-y-5">
+                <a href="#" className="flex text-violet-700 underline"><PlayCircle className="mr-1"/> Watch demo video</a>
                 <h1 className="text-6xl font-extrabold text-balance text-zinc-50">Ship your startup in days,not weeks</h1>
                 <h3 className="text-xl text-balance text-zinc-400">The NextJS boilerplate with all you need to build your SaaS, AI tool, or any other web app and make your first $ online fast.</h3>
             </div>
