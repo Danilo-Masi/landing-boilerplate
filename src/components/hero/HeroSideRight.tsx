@@ -1,5 +1,5 @@
 import HeroSideContainer from "../custom/HeroSideContainer";
-import heroImage from '../../assets/heroImage.png';
+import heroImage from '../../assets/hero-image.png';
 
 export default function HeroSideRight() {
     return (
@@ -7,7 +7,7 @@ export default function HeroSideRight() {
             <img
                 src={heroImage}
                 alt="hero image"
-                className="w-full md:w-[90%]" />
+                className="w-full" />
         </HeroSideContainer>
     );
 }

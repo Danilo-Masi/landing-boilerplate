@@ -14,10 +14,10 @@ export default function SocialCard({ proofs }: SocialCardProps) {
             {proofs.map((item, index) => (
                 <div
                     key={index}
-                    className="w-full h-fit p-5 flex flex-col gap-y-5 bg-zinc-700 border border-zinc-600 rounded-lg">
+                    className="w-full h-fit p-5 flex flex-col gap-y-5 bg-zinc-800 border border-zinc-700 rounded-lg">
                     <p className="text-zinc-50">{item.content}</p>
                     <div className="flex gap-x-3">
-                        <div className="w-12 h-12 rounded-full flex items-center justify-center p-3 bg-zinc-600 text-zinc-300 font-semibold">
+                        <div className="w-12 h-12 rounded-full flex items-center justify-center p-3 bg-zinc-700 text-zinc-300 font-semibold">
                             <p>{item.name.slice(0, 2).toUpperCase()}</p>
                         </div>
                         <div>

@@ -9,7 +9,7 @@ interface FeaturesDescriptionsProps {
 
 export default function FeaturesDescriptions({ featuresDescriptions }: FeaturesDescriptionsProps) {
     return (
-        <div className="w-full md:w-[calc(50%-0.75rem)] h-auto min-h-[70svh] flex flex-col gap-4">
+        <div className="w-full md:w-[calc(50%-0.75rem)] h-auto flex flex-col gap-4 mb-10 md:mb-0">
             {featuresDescriptions.map((item, index) => (
                 <div
                     key={index}

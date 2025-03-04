@@ -9,7 +9,7 @@ export default function Hero() {
     }
 
     return (
-        <div className="w-full h-auto min-h-svh flex flex-col md:flex-row md:flex-wrap gap-20 md:gap-0">
+        <div className="w-full h-auto min-h-svh flex flex-col md:flex-row md:flex-wrap">
             <Navbar />
             <HeroSideLeft handleClick={handleClick} />
             <HeroSideRight />

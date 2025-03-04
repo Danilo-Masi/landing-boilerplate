@@ -11,7 +11,7 @@ const featuresDescriptions = [
 
 export default function Features() {
     return (
-        <div className="w-full h-auto  flex flex-col md:flex-row md:flex-wrap gap-10 md:gap-6 mt-52">
+        <div className="w-full h-auto  flex flex-col md:flex-row md:flex-wrap md:gap-6 mt-52">
             <Header
                 title="Supercharge your app instantly, launch faster, make $"
                 description="Login users, process payments and send emails at lightspeed. Spend your time building your startup, not integrating APIs. ShipFast provides you with the boilerplate code you need to launch, FAST." />
