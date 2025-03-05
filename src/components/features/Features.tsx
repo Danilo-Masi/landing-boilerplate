@@ -3,19 +3,20 @@ import FeaturesDescriptions from "./FeaturesDescriptions"
 import FeaturesImages from "./FeaturesImages";
 
 const featuresDescriptions = [
-    { title: "title 1", description: "description 1" },
-    { title: "title 2", description: "description 2" },
-    { title: "title 3", description: "description 3" },
-    { title: "title 4", description: "description 4" },
+    { index: "feature-1", title: "Cras posuere elit interdum tempor consectetur", description: "Vestibulum non rutrum elit. Proin ex augue, vestibulum sit amet tristique sollicitudin, vulputate ac nulla. Mauris vel tellus libero. Maecenas eu lacus nunc. Praesent lobortis elit arcu, at efficitur leo convallis id. Vivamus ac nisi ligula. Fusce rutrum non tellus finibus vulputate." },
+    { index: "feature-2", title: "Aliquam dignissim tincidunt mi a condimentum.", description: "Vestibulum non rutrum elit. Proin ex augue, vestibulum sit amet tristique sollicitudin, vulputate ac nulla. Mauris vel tellus libero. Maecenas eu lacus nunc. Praesent lobortis elit arcu, at efficitur leo convallis id. Vivamus ac nisi ligula. Fusce rutrum non tellus finibus vulputate." },
+    { index: "feature-3", title: "In eget risus efficitur, venenatis metus sit amet", description: "Vestibulum non rutrum elit. Proin ex augue, vestibulum sit amet tristique sollicitudin, vulputate ac nulla. Mauris vel tellus libero. Maecenas eu lacus nunc. Praesent lobortis elit arcu, at efficitur leo convallis id. Vivamus ac nisi ligula. Fusce rutrum non tellus finibus vulputate." },
+    { index: "feature-4", title: "Duis vitae metus tempor, molestie turpis sed", description: "Vestibulum non rutrum elit. Proin ex augue, vestibulum sit amet tristique sollicitudin, vulputate ac nulla. Mauris vel tellus libero. Maecenas eu lacus nunc. Praesent lobortis elit arcu, at efficitur leo convallis id. Vivamus ac nisi ligula. Fusce rutrum non tellus finibus vulputate." },
 ]
 
 export default function Features() {
     return (
-        <div className="w-full h-auto  flex flex-col md:flex-row md:flex-wrap md:gap-6 mt-52">
+        <div className="w-full h-auto  flex flex-col md:flex-row md:flex-wrap md:gap-6 mt-52" id="Features">
             <Header
-                title="Supercharge your app instantly, launch faster, make $"
-                description="Login users, process payments and send emails at lightspeed. Spend your time building your startup, not integrating APIs. ShipFast provides you with the boilerplate code you need to launch, FAST." />
-            <FeaturesDescriptions featuresDescriptions={featuresDescriptions} />
+                title="Aenean purus nulla, scelerisque id aliquam sed"
+                description="Duis sagittis vitae quam vitae vehicula. Curabitur molestie, lacus vitae ultricies gravida, risus mauris hendrerit magna, ut pellentesque enim sapien" />
+            <FeaturesDescriptions
+                featuresDescriptions={featuresDescriptions} />
             <FeaturesImages />
         </div>
     );

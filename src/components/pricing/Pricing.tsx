@@ -24,22 +24,24 @@ const premiumValidPoints = [
 
 export default function Pricing() {
     return (
-        <div className="w-full md:w-4/5 h-auto flex flex-col items-center justify-center gap-10 md:gap-6 mt-52">
+        <div className="w-full md:w-4/5 h-auto flex flex-col items-center justify-center gap-10 md:gap-6 mt-52" id="Pricing">
             <Header
-                title="Save hours of repetitive code, ship fast, get profitable!"
-                description="$100 off for the first 6610 customers (14 left)" />
+                title="Phasellus euismod est eget tempus tincidunt. Donec"
+                description="Phasellus dictum imperdiet velit eget commodo. Quisque auctor quis leo sed aliquam. In aliquet feugiat libero ac semper. Vestibulum id" />
             <div className="w-full flex flex-col md:flex-row items-center justify-center gap-10">
                 <PriceCard
                     title="Starter"
                     price="299"
                     discountedPrice="199"
                     validPoint={starterValidPoints}
-                    invalidPoint={starterInvalidPoints} />
+                    invalidPoint={starterInvalidPoints}
+                    textButton="Call to action" />
                 <PriceCard
                     title="Premium"
                     price="349"
                     discountedPrice="249"
-                    validPoint={premiumValidPoints} />
+                    validPoint={premiumValidPoints}
+                    textButton="Call to action" />
             </div>
         </div>
     );

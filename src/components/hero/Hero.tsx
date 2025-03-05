@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 export default function Hero() {
 
     const handleClick = () => {
-        alert('Button click');
+        alert('Hero Button Clicked');
     }
 
     return (

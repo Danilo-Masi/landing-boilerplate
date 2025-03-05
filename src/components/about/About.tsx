@@ -3,7 +3,7 @@ import profile from '../../assets/profile-image.jpg';
 
 export default function About() {
     return (
-        <div className="w-full md:w-4/5 h-auto flex flex-col items-center gap-10 mt-52 text-zinc-50">
+        <div className="w-full md:w-4/5 h-auto flex flex-col items-center gap-10 mt-52 text-foreground">
             {/* Immagine e primo paragrafo */}
             <div className='w-full md:w-3/4 h-auto md:max-h-[30svh] flex flex-col md:flex-row gap-5'>
                 <img
@@ -35,7 +35,7 @@ export default function About() {
                 </p>
             </div>
             {/* Video */}
-            <div className='w-full min-h-[30svh] md:min-h-[80svh] flex items-center justify-center rounded-lg bg-red-300'>
+            <div className='w-full min-h-[30svh] md:min-h-[80svh] flex items-center justify-center rounded-lg bg-red-300' id='Video'>
                 Video
             </div>
         </div>

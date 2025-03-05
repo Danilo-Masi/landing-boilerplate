@@ -1,26 +1,16 @@
-import About from "./components/about/About";
-import AppContainer from "./components/custom/AppContainer";
-import Faqs from "./components/faqs/Faqs";
-import Features from "./components/features/Features";
-import Footer from "./components/footer/Footer";
-import FooterHero from "./components/footerHero/FooterHero";
-import Hero from "./components/hero/Hero";
-import Pricing from "./components/pricing/Pricing";
-import Problem from "./components/problem/Problem";
-import Social from "./components/social/Social";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import Termspage from "./pages/Termspage";
+import Privacypage from "./pages/Privacypage";
 
 export default function App() {
   return (
-    <AppContainer>
-      <Hero />
-      <Problem />
-      <Features />
-      <Social />
-      <About />
-      <Pricing />
-      <Faqs />
-      <FooterHero />
-      <Footer />
-    </AppContainer>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Homepage />} />
+        <Route path="/terms-of-services" element={<Termspage />} />
+        <Route path="/privacy-policy" element={<Privacypage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

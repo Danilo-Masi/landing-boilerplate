@@ -29,8 +29,8 @@ export default function Social() {
     return (
         <div className="w-full h-auto flex flex-col mt-52 gap-10">
             <Header
-                title="6583 makers built AI tools, SaaS, and more"
-                description="They made their first $ online, and some even quit their 9-5!" />
+                title="In quis dapibus nisl, vel accumsan lacus"
+                description="Duis sagittis vitae quam vitae vehicula. Curabitur molestie, lacus vitae ultricies gravida, risus mauris hendrerit magna" />
             <div className="w-full h-auto flex flex-col md:flex-row gap-4">
                 <SocialCards proofs={socialProof1} />
                 <SocialCards proofs={socialProof2} />

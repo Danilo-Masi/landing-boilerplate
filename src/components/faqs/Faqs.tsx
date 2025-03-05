@@ -14,20 +14,20 @@ const faqs = [
 
 export default function Faqs() {
     return (
-        <div className="w-full md:w-4/5 h-auto flex flex-col items-center justify-center gap-10 md:gap-6 mt-52">
+        <div className="w-full md:w-4/5 h-auto flex flex-col items-center justify-center gap-10 md:gap-6 mt-52" id="Faqs">
             <Header
                 title="Frequently Asked Questions"
                 description="Have another question? Contact me on Twitter or by email" />
             <Accordion
                 type="single"
                 collapsible
-                className="w-full md:w-2/3 text-zinc-50">
+                className="w-full md:w-2/3 text-foreground">
                 {faqs && faqs.map((item, index) => (
                     <AccordionItem
                         key={index}
                         value={item.trigger}>
                         <AccordionTrigger className="cursor-pointer">{item.trigger}</AccordionTrigger>
-                        <AccordionContent>
+                        <AccordionContent className="text-muted-foreground">
                             {item.content}
                         </AccordionContent>
                     </AccordionItem>
