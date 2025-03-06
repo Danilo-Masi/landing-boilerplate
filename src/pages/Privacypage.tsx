@@ -15,19 +15,19 @@ export default function Privacypage() {
   return (
     <AppContainer>
       <div className="w-full md:w-1/2 flex flex-col md:flex-row items-center gap-6 my-10">
-        <Button className="bg-zinc-700 hover:bg-zinc-600">
+        <Button className="bg-muted-foreground text-zinc-50">
           <Link to="/" className="flex items-center gap-x-2">
             <ArrowLeftFromLine />
             Go back
           </Link>
         </Button>
-        <h1 className="text-3xl font-semibold text-zinc-50">Privacy policy</h1>
+        <h1 className="text-3xl font-semibold text-foreground">Privacy policy</h1>
       </div>
       <div className="w-full md:w-1/2 min-h-svh flex flex-col gap-6 mb-10">
         {terms.map((item, index) => (
           <div className="flex flex-col gap-y-3" key={index}>
-            <h1 className="text-lg font-semibold text-zinc-100">{item.title}</h1>
-            <p className="text-zinc-300">{item.paragraph}</p>
+            <h1 className="text-lg font-semibold text-foreground">{item.title}</h1>
+            <p className="text-muted-foreground">{item.paragraph}</p>
           </div>
         ))}
       </div>

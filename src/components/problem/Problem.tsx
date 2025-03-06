@@ -2,22 +2,22 @@ import ProblemContainer from "../custom/ProblemContainer";
 import { Check, X } from "lucide-react";
 
 const problems = [
-    "problem 1",
-    "problem 2",
-    "problem 3",
-    "problem 4",
-    "problem 5",
-    "problem 6",
+    "Donec vel elit sit amet",
+    "Donec vel elit sit amet",
+    "Donec vel elit sit amet",
+    "Donec vel elit sit amet",
+    "Donec vel elit sit amet",
+    "Donec vel elit sit amet",
 ];
 
 const solutions = [
-    "solutions 1",
-    "solutions 2",
-    "solutions 3",
-    "solutions 4",
-    "solutions 5",
-    "solutions 6",
-]
+    "Ut dignissim sed urna sit",
+    "Ut dignissim sed urna sit",
+    "Ut dignissim sed urna sit",
+    "Ut dignissim sed urna sit",
+    "Ut dignissim sed urna sit",
+    "Ut dignissim sed urna sit",
+];
 
 export default function Problem() {
     return (

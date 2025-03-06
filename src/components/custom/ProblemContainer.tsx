@@ -9,7 +9,7 @@ export default function ProblemContainer({ colors, array, icon }: ProblemContain
         <div className={`w-full md:w-[calc(50%-0.75rem)] h-fit py-10 flex items-center justify-center rounded-lg text-zinc-50 ${colors}`}>
             <ul className="flex flex-col items-center justify-center gap-y-3">
                 {array.map((item, index) => (
-                    <li className="flex items-center justify-center" key={index}>{icon}{item}</li>
+                    <li className="flex items-center justify-center gap-x-1" key={index}>{icon}{item}</li>
                 ))}
             </ul>
         </div>
