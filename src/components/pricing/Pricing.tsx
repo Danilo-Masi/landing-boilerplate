@@ -41,7 +41,8 @@ export default function Pricing() {
                     price="349"
                     discountedPrice="249"
                     validPoint={premiumValidPoints}
-                    textButton="Call to action" />
+                    textButton="Call to action"
+                    bestOffer="Premium" />
             </div>
         </div>
     );

@@ -11,12 +11,11 @@ const featuresDescriptions = [
 
 export default function Features() {
     return (
-        <div className="w-full h-auto  flex flex-col md:flex-row md:flex-wrap md:gap-6 mt-52" id="Features">
+        <div className="w-full h-auto flex flex-col md:flex-row md:flex-wrap md:gap-6 mt-52" id="Features">
             <Header
                 title="Aenean purus nulla, scelerisque id aliquam sed"
                 description="Duis sagittis vitae quam vitae vehicula. Curabitur molestie, lacus vitae ultricies gravida, risus mauris hendrerit magna, ut pellentesque enim sapien" />
-            <FeaturesDescriptions
-                featuresDescriptions={featuresDescriptions} />
+            <FeaturesDescriptions featuresDescriptions={featuresDescriptions} />
             <FeaturesImages />
         </div>
     );

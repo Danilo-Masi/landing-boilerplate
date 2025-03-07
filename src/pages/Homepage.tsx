@@ -1,26 +1,43 @@
-import About from "@/components/about/About";
+import { lazy, Suspense, memo } from "react";
 import AppContainer from "@/components/custom/AppContainer";
-import Faqs from "@/components/faqs/Faqs";
-import Features from "@/components/features/Features";
-import Footer from "@/components/footer/Footer";
-import FooterHero from "@/components/footerHero/FooterHero";
-import Hero from "@/components/hero/Hero";
-import Pricing from "@/components/pricing/Pricing";
-import Problem from "@/components/problem/Problem";
-import Social from "@/components/social/Social";
+import Fallback from "@/components/fallback/Fallback";
+
+// Lazy loading delle sezioni
+const Hero = lazy(() => import("@/components/hero/Hero"));
+const Problem = lazy(() => import("@/components/problem/Problem"));
+const Features = lazy(() => import("@/components/features/Features"));
+const Social = lazy(() => import("@/components/social/Social"));
+const About = lazy(() => import("@/components/about/About"));
+const Pricing = lazy(() => import("@/components/pricing/Pricing"));
+const Faqs = lazy(() => import("@/components/faqs/Faqs"));
+const FooterHero = lazy(() => import("@/components/footerHero/FooterHero"));
+const Footer = lazy(() => import("@/components/footer/Footer"));
+
+// Memoizzazione per evitare render inutili
+const MemoHero = memo(Hero);
+const MemoProblem = memo(Problem);
+const MemoFeatures = memo(Features);
+const MemoSocial = memo(Social);
+const MemoAbout = memo(About);
+const MemoPricing = memo(Pricing);
+const MemoFaqs = memo(Faqs);
+const MemoFooterHero = memo(FooterHero);
+const MemoFooter = memo(Footer);
 
 export default function Homepage() {
     return (
         <AppContainer>
-            <Hero />
-            <Problem />
-            <Features />
-            <Social />
-            <About />
-            <Pricing />
-            <Faqs />
-            <FooterHero />
-            <Footer />
+            <Suspense fallback={<Fallback />}>
+                <MemoHero />
+                <MemoProblem />
+                <MemoFeatures />
+                <MemoSocial />
+                <MemoAbout />
+                <MemoPricing />
+                <MemoFaqs />
+                <MemoFooterHero />
+                <MemoFooter />
+            </Suspense>
         </AppContainer>
     );
 }

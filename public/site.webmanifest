@@ -1,6 +1,7 @@
 {
   "name": "Landing boilerplate",
   "short_name": "LB",
+  "description": "Un boilerplate per landing page di SaaS veloce e ottimizzato.",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -17,5 +18,6 @@
   ],
   "theme_color": "#af33f2",
   "background_color": "#f7ebfe",
-  "display": "standalone"
+  "display": "standalone",
+  "orientation": "portrait"
 }

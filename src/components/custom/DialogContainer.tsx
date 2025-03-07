@@ -23,11 +23,11 @@ export default function DialogContainer({ dialogTitle, dialogDescription, dialog
                 </AlertDialogHeader>
                 <AlertDialogFooter>
                     <AlertDialogAction
-                        className="cursor-pointer bg-principal hover:bg-principal-hover text-zinc-50"
+                        className="cursor-pointer bg-principal hover:bg-principal-hover text-principal-foreground"
                         onClick={handleClick}>
                         {dialogAction}
                     </AlertDialogAction>
-                    <AlertDialogCancel className="cursor-pointer bg-muted-foreground text-foreground px-3 rounded-md text-sm">
+                    <AlertDialogCancel className="cursor-pointer bg-muted-foreground text-principal-foreground px-3 rounded-md text-sm">
                         Cancel
                     </AlertDialogCancel>
                 </AlertDialogFooter>

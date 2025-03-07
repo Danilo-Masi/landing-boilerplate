@@ -35,7 +35,7 @@ export default function About() {
                 </p>
             </div>
             {/* Video */}
-            <div className='w-full min-h-[30svh] md:min-h-[80svh] flex items-center justify-center rounded-lg bg-red-300' id='Video'>
+            <div className='w-full min-h-[30svh] md:min-h-[80svh] 2xl:min-h-[60svh] flex items-center justify-center rounded-lg bg-red-300' id='Video'>
                 Video
             </div>
         </div>

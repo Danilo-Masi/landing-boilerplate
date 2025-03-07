@@ -7,7 +7,7 @@ export default function HeroSideRight() {
             <img
                 src={heroImage}
                 alt="hero image"
-                className="w-full" />
+                className="w-full 2xl:w-[90%]" />
         </HeroSideContainer>
     );
 }
